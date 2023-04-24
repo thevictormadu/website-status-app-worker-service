@@ -9,8 +9,7 @@ This demo project is a .NET worker windows background service that checks if a w
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [Credits](#credits)
-- [License](#license)
+
 
 ## Installation
 
