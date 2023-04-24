@@ -1,0 +1,55 @@
+2023-04-24 08:53:36.084 +01:00 [INF] Starting up the service
+2023-04-24 08:53:37.256 +01:00 [INF] Worker running at: "2023-04-24T08:53:37.2499131+01:00"
+2023-04-24 08:53:37.591 +01:00 [ERR] BackgroundService failed
+System.Net.Http.HttpRequestException: No such host is known. (www.victormadu.tech:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at WebsiteStatus.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\ivict\OneDrive\Desktop\WebsiteStatusService\WebsiteStatusApp\WebsiteStatus\Worker.cs:line 31
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2023-04-24 08:53:37.638 +01:00 [FTL] The HostOptions.BackgroundServiceExceptionBehavior is configured to StopHost. A BackgroundService has thrown an unhandled exception, and the IHost instance is stopping. To avoid this behavior, configure this to Ignore; however the BackgroundService will not be restarted.
+System.Net.Http.HttpRequestException: No such host is known. (www.victormadu.tech:443)
+ ---> System.Net.Sockets.SocketException (11001): No such host is known.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at WebsiteStatus.Worker.ExecuteAsync(CancellationToken stoppingToken) in C:\Users\ivict\OneDrive\Desktop\WebsiteStatusService\WebsiteStatusApp\WebsiteStatus\Worker.cs:line 31
+   at Microsoft.Extensions.Hosting.Internal.Host.TryExecuteBackgroundServiceAsync(BackgroundService backgroundService)
+2023-04-24 08:55:23.914 +01:00 [INF] Starting up the service
+2023-04-24 08:57:07.679 +01:00 [INF] Starting up the service
+2023-04-24 08:59:22.508 +01:00 [INF] Starting up the service
+2023-04-24 08:59:24.005 +01:00 [INF] Worker running at: "2023-04-24T08:59:23.9804603+01:00"
+2023-04-24 08:59:25.832 +01:00 [INF] Getting result completed
+2023-04-24 08:59:25.833 +01:00 [INF] Website is up and running at "OK"
+2023-04-24 08:59:30.857 +01:00 [INF] Worker running at: "2023-04-24T08:59:30.8578136+01:00"
+2023-04-24 08:59:31.771 +01:00 [INF] Getting result completed
+2023-04-24 08:59:31.771 +01:00 [INF] Website is up and running at "OK"
+2023-04-24 08:59:36.774 +01:00 [INF] Worker running at: "2023-04-24T08:59:36.7739730+01:00"
+2023-04-24 08:59:38.197 +01:00 [INF] Getting result completed
+2023-04-24 08:59:38.197 +01:00 [INF] Website is up and running at "OK"
+2023-04-24 08:59:43.209 +01:00 [INF] Worker running at: "2023-04-24T08:59:43.2092116+01:00"
+2023-04-24 08:59:44.319 +01:00 [INF] Getting result completed
+2023-04-24 08:59:44.319 +01:00 [INF] Website is up and running at "OK"
