@@ -6,13 +6,14 @@ Log.Logger = new LoggerConfiguration()
     .MinimumLevel.Debug()
     .MinimumLevel.Override("Microsoft", Serilog.Events.LogEventLevel.Warning)
     .Enrich.FromLogContext()
-    .WriteTo.File("worker-logs/log.txt", rollingInterval: RollingInterval.Hour)
+    .WriteTo.File(@"C:\temp\workerservice\LogFile.txt")
     .CreateLogger();
 
 try
 {
     Log.Information("Starting up the service");
     IHost host = Host.CreateDefaultBuilder(args)
+        .UseWindowsService()
     .ConfigureServices(services =>
     {
         services.AddHostedService<Worker>();
